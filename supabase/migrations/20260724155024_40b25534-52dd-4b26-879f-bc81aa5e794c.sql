@@ -1,0 +1,1 @@
+DROP POLICY IF EXISTS "Service role can manage orders" ON public.orders;
