@@ -7,9 +7,17 @@
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
 export default defineConfig({
+  vite: {
+    // If deploying to a GitHub Pages project site (e.g. /repo-name/), set the
+    // repository name here so asset paths resolve correctly.
+    // For a user/org site (username.github.io) leave it as "/".
+    base: process.env.VITE_BASE_PATH || "/",
+  },
+
   tanstackStart: {
-    // Redirect TanStack Start's bundled server entry to src/server.ts (our SSR error wrapper).
-    // nitro/vite builds from this
-    server: { entry: "server" },
+    // The site is exported as a client-side SPA so it can be hosted on
+    // GitHub Pages. The order form still talks to Lovable Cloud from the
+    // browser, no server runtime is required.
+    prerender: { enabled: false },
   },
 });
