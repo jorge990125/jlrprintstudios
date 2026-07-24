@@ -79,14 +79,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "JLR Print Studios | Impresión de fotos y documentos" },
-      { name: "description", content: "JLR Print Studios: impresión profesional de fotos y documentos con pedidos online. Calidad corporativa, precios claros y entrega rápida." },
+      { title: "JLR Print Studios | Impresión profesional" },
+      { name: "description", content: "Impresión profesional de fotos y documentos en JLR Print Studios. Calidad, rapidez y precios competitivos." },
       { name: "author", content: "JLR Print Studios" },
-      { property: "og:title", content: "JLR Print Studios | Impresión de fotos y documentos" },
-      { property: "og:description", content: "JLR Print Studios: impresión profesional de fotos y documentos con pedidos online. Calidad corporativa, precios claros y entrega rápida." },
+      { property: "og:title", content: "JLR Print Studios | Impresión profesional" },
+      { property: "og:description", content: "Impresión profesional de fotos y documentos en JLR Print Studios. Calidad, rapidez y precios competitivos." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:site", content: "@JLRPrintStudios" },
+      { name: "twitter:title", content: "JLR Print Studios | Impresión profesional" },
+      { name: "twitter:description", content: "Impresión profesional de fotos y documentos en JLR Print Studios. Calidad, rapidez y precios competitivos." },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/CrPKrKpCfGWITNK0IPg6wjrH76P2/social-images/social-1784909249477-232830453.webp" },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/CrPKrKpCfGWITNK0IPg6wjrH76P2/social-images/social-1784909249477-232830453.webp" },
     ],
     links: [
       {
