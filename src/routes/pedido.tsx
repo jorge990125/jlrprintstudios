@@ -9,17 +9,17 @@ import { supabase } from "@/integrations/supabase/client";
 export const Route = createFileRoute("/pedido")({
   head: () => ({
     meta: [
-      { title: "Hacer pedido | JLR Print Studios" },
+      { title: "Hacer pedido | JLR PrintStudios" },
       {
         name: "description",
         content:
-          "Haz tu pedido de impresión online en JLR Print Studios. Sube tus archivos y recibe presupuesto.",
+          "Haz tu pedido de impresión online en JLR PrintStudios. Sube tus archivos y recibe presupuesto.",
       },
-      { property: "og:title", content: "Hacer pedido | JLR Print Studios" },
+      { property: "og:title", content: "Hacer pedido | JLR PrintStudios" },
       {
         property: "og:description",
         content:
-          "Haz tu pedido de impresión online en JLR Print Studios. Sube tus archivos y recibe presupuesto.",
+          "Haz tu pedido de impresión online en JLR PrintStudios. Sube tus archivos y recibe presupuesto.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

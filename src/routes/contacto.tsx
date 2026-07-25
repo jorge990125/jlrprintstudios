@@ -7,17 +7,17 @@ import { contactSchema, type ContactInput } from "@/lib/schemas";
 export const Route = createFileRoute("/contacto")({
   head: () => ({
     meta: [
-      { title: "Contacto | JLR Print Studios" },
+      { title: "Contacto | JLR PrintStudios" },
       {
         name: "description",
         content:
-          "Contacta con JLR Print Studios. Estamos aquí para ayudarte con tus proyectos de impresión.",
+          "Contacta con JLR PrintStudios. Estamos aquí para ayudarte con tus proyectos de impresión.",
       },
-      { property: "og:title", content: "Contacto | JLR Print Studios" },
+      { property: "og:title", content: "Contacto | JLR PrintStudios" },
       {
         property: "og:description",
         content:
-          "Contacta con JLR Print Studios. Estamos aquí para ayudarte con tus proyectos de impresión.",
+          "Contacta con JLR PrintStudios. Estamos aquí para ayudarte con tus proyectos de impresión.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

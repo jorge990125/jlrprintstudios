@@ -13,17 +13,17 @@ import {
 export const Route = createFileRoute("/servicios")({
   head: () => ({
     meta: [
-      { title: "Servicios | JLR Print Studios" },
+      { title: "Servicios | JLR PrintStudios" },
       {
         name: "description",
         content:
-          "Descubre todos los servicios de impresión de JLR Print Studios: fotos, documentos, grandes formatos, encuadernación y más.",
+          "Descubre todos los servicios de impresión de JLR PrintStudios: fotos, documentos, grandes formatos, encuadernación y más.",
       },
-      { property: "og:title", content: "Servicios | JLR Print Studios" },
+      { property: "og:title", content: "Servicios | JLR PrintStudios" },
       {
         property: "og:description",
         content:
-          "Descubre todos los servicios de impresión de JLR Print Studios: fotos, documentos, grandes formatos, encuadernación y más.",
+          "Descubre todos los servicios de impresión de JLR PrintStudios: fotos, documentos, grandes formatos, encuadernación y más.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
