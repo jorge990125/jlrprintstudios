@@ -40,7 +40,7 @@ function Contacto() {
     const body = encodeURIComponent(
       `Nombre: ${data.name}\nEmail: ${data.email}\nAsunto: ${data.subject}\n\nMensaje:\n${data.message}`
     );
-    window.location.href = `mailto:hola@jlrprintstudios.com?subject=${encodeURIComponent(
+    window.location.href = `mailto:jorgeluisramirezlorenzo@gmail.com?subject=${encodeURIComponent(
       data.subject
     )}&body=${body}`;
   };

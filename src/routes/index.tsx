@@ -87,7 +87,7 @@ function Index() {
               Impresión profesional para tus mejores proyectos
             </h1>
             <p className="mt-6 text-lg text-background/80 sm:text-xl">
-              En JLR Print Studios transformamos tus fotos y documentos en
+              En JLR PrintStudios transformamos tus fotos y documentos en
               impresiones de alta calidad. Rápido, fácil y con resultados
               profesionales.
             </p>
