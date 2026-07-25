@@ -35,6 +35,21 @@ console.log(`Building for GitHub Pages with base path: ${basePath}`);
 
 execSync("bun run build", { cwd: root, stdio: "inherit" });
 
+let outputDir;
+let serverPath;
+for (const c of candidates) {
+  if (await exists(c.serverPath)) {
+    outputDir = c.outputDir;
+    serverPath = c.serverPath;
+    break;
+  }
+}
+if (!serverPath) {
+  console.error("Could not locate Nitro server output. Checked:", candidates);
+  process.exit(1);
+}
+console.log(`Using server bundle: ${serverPath}`);
+console.log(`Writing static site to: ${outputDir}`);
 await mkdir(outputDir, { recursive: true });
 
 const routes = ["/", "/servicios", "/precios", "/pedido", "/contacto"];
