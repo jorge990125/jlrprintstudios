@@ -74,5 +74,12 @@ for (const route of routes) {
 
 // SPA fallback for GitHub Pages
 await copyFile(join(outputDir, "index.html"), join(outputDir, "404.html"));
-console.log("Copied .output/public/index.html -> .output/public/404.html");
-console.log("Deploy the contents of .output/public to GitHub Pages.");
+console.log(`Copied ${outputDir}/index.html -> ${outputDir}/404.html`);
+
+// Mirror the output to a stable ./site directory so CI/deploy configs don't
+// need to know whether the underlying build wrote to dist/ or .output/.
+const siteDir = join(root, "site");
+await mkdir(siteDir, { recursive: true });
+execSync(`cp -R "${outputDir}/." "${siteDir}/"`, { stdio: "inherit" });
+console.log(`Mirrored ${outputDir} -> ${siteDir}`);
+console.log("Deploy the contents of ./site to GitHub Pages.");
