@@ -15,7 +15,7 @@ export function Logo({ className, showText = true }: LogoProps) {
       </span>
       {showText && (
         <span className="text-lg font-semibold tracking-tight text-foreground">
-          Print Studios
+          PrintStudios
         </span>
       )}
     </div>

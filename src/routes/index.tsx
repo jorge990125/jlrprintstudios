@@ -12,17 +12,17 @@ import {
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "JLR Print Studios | Impresión profesional" },
+      { title: "JLR PrintStudios | Impresión profesional" },
       {
         name: "description",
         content:
-          "Impresión profesional de fotos y documentos en JLR Print Studios. Calidad, rapidez y precios competitivos.",
+          "Impresión profesional de fotos y documentos en JLR PrintStudios. Calidad, rapidez y precios competitivos.",
       },
-      { property: "og:title", content: "JLR Print Studios | Impresión profesional" },
+      { property: "og:title", content: "JLR PrintStudios | Impresión profesional" },
       {
         property: "og:description",
         content:
-          "Impresión profesional de fotos y documentos en JLR Print Studios. Calidad, rapidez y precios competitivos.",
+          "Impresión profesional de fotos y documentos en JLR PrintStudios. Calidad, rapidez y precios competitivos.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -87,7 +87,7 @@ function Index() {
               Impresión profesional para tus mejores proyectos
             </h1>
             <p className="mt-6 text-lg text-background/80 sm:text-xl">
-              En JLR Print Studios transformamos tus fotos y documentos en
+              En JLR PrintStudios transformamos tus fotos y documentos en
               impresiones de alta calidad. Rápido, fácil y con resultados
               profesionales.
             </p>
@@ -147,7 +147,7 @@ function Index() {
           <div className="grid gap-12 lg:grid-cols-2">
             <div>
               <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-                ¿Por qué elegir JLR Print Studios?
+                ¿Por qué elegir JLR PrintStudios?
               </h2>
               <p className="mt-4 text-lg text-muted-foreground">
                 Nos comprometemos con la calidad y la satisfacción de nuestros

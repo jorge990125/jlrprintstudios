@@ -7,17 +7,17 @@ import { contactSchema, type ContactInput } from "@/lib/schemas";
 export const Route = createFileRoute("/contacto")({
   head: () => ({
     meta: [
-      { title: "Contacto | JLR Print Studios" },
+      { title: "Contacto | JLR PrintStudios" },
       {
         name: "description",
         content:
-          "Contacta con JLR Print Studios. Estamos aquí para ayudarte con tus proyectos de impresión.",
+          "Contacta con JLR PrintStudios. Estamos aquí para ayudarte con tus proyectos de impresión.",
       },
-      { property: "og:title", content: "Contacto | JLR Print Studios" },
+      { property: "og:title", content: "Contacto | JLR PrintStudios" },
       {
         property: "og:description",
         content:
-          "Contacta con JLR Print Studios. Estamos aquí para ayudarte con tus proyectos de impresión.",
+          "Contacta con JLR PrintStudios. Estamos aquí para ayudarte con tus proyectos de impresión.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -40,7 +40,7 @@ function Contacto() {
     const body = encodeURIComponent(
       `Nombre: ${data.name}\nEmail: ${data.email}\nAsunto: ${data.subject}\n\nMensaje:\n${data.message}`
     );
-    window.location.href = `mailto:hola@jlrprintstudios.com?subject=${encodeURIComponent(
+    window.location.href = `mailto:jorgeluisramirezlorenzo@gmail.com?subject=${encodeURIComponent(
       data.subject
     )}&body=${body}`;
   };
@@ -67,7 +67,7 @@ function Contacto() {
                 <p className="font-medium">¡Mensaje preparado!</p>
                 <p className="mt-2 text-sm text-muted-foreground">
                   Se ha abierto tu cliente de correo. Si no se abre, escríbenos
-                  directamente a hola@jlrprintstudios.com.
+                  directamente a jorgeluisramirezlorenzo@gmail.com.
                 </p>
               </div>
             ) : (
@@ -176,7 +176,7 @@ function Contacto() {
                 </div>
                 <div>
                   <h3 className="font-medium text-foreground">Teléfono</h3>
-                  <p className="text-muted-foreground">+34 600 000 000</p>
+                  <p className="text-muted-foreground">+5358160709</p>
                 </div>
               </div>
               <div className="flex items-start gap-4">
@@ -185,7 +185,7 @@ function Contacto() {
                 </div>
                 <div>
                   <h3 className="font-medium text-foreground">Email</h3>
-                  <p className="text-muted-foreground">hola@jlrprintstudios.com</p>
+                  <p className="text-muted-foreground">jorgeluisramirezlorenzo@gmail.com</p>
                 </div>
               </div>
               <div className="flex items-start gap-4">
@@ -195,7 +195,7 @@ function Contacto() {
                 <div>
                   <h3 className="font-medium text-foreground">Dirección</h3>
                   <p className="text-muted-foreground">
-                    Calle Ejemplo 123, 28001 Madrid
+                    edificio 115, apartamento 5, melilla, rafael Freyre, holguin,cuba
                   </p>
                 </div>
               </div>

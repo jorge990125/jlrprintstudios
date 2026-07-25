@@ -9,17 +9,17 @@ import { supabase } from "@/integrations/supabase/client";
 export const Route = createFileRoute("/pedido")({
   head: () => ({
     meta: [
-      { title: "Hacer pedido | JLR Print Studios" },
+      { title: "Hacer pedido | JLR PrintStudios" },
       {
         name: "description",
         content:
-          "Haz tu pedido de impresión online en JLR Print Studios. Sube tus archivos y recibe presupuesto.",
+          "Haz tu pedido de impresión online en JLR PrintStudios. Sube tus archivos y recibe presupuesto.",
       },
-      { property: "og:title", content: "Hacer pedido | JLR Print Studios" },
+      { property: "og:title", content: "Hacer pedido | JLR PrintStudios" },
       {
         property: "og:description",
         content:
-          "Haz tu pedido de impresión online en JLR Print Studios. Sube tus archivos y recibe presupuesto.",
+          "Haz tu pedido de impresión online en JLR PrintStudios. Sube tus archivos y recibe presupuesto.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -203,7 +203,7 @@ function Pedido() {
                   type="tel"
                   {...register("phone")}
                   className="w-full rounded-md border border-input bg-background px-3 py-2 text-sm text-foreground outline-none ring-offset-background transition-colors focus-visible:ring-2 focus-visible:ring-ring"
-                  placeholder="+34 600 000 000"
+                  placeholder="+5358160709"
                 />
                 {errors.phone && (
                   <p className="mt-1 text-sm text-destructive">

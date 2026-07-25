@@ -4,17 +4,17 @@ import { Check } from "lucide-react";
 export const Route = createFileRoute("/precios")({
   head: () => ({
     meta: [
-      { title: "Precios | JLR Print Studios" },
+      { title: "Precios | JLR PrintStudios" },
       {
         name: "description",
         content:
-          "Consulta los precios de impresión de fotos y documentos en JLR Print Studios. Tarifas claras y competitivas.",
+          "Consulta los precios de impresión de fotos y documentos en JLR PrintStudios. Tarifas claras y competitivas.",
       },
-      { property: "og:title", content: "Precios | JLR Print Studios" },
+      { property: "og:title", content: "Precios | JLR PrintStudios" },
       {
         property: "og:description",
         content:
-          "Consulta los precios de impresión de fotos y documentos en JLR Print Studios. Tarifas claras y competitivas.",
+          "Consulta los precios de impresión de fotos y documentos en JLR PrintStudios. Tarifas claras y competitivas.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
