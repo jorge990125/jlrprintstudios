@@ -62,14 +62,14 @@ export function Footer() {
               </li>
               <li className="flex items-start gap-2">
                 <MapPin className="h-4 w-4 shrink-0" />
-                <span>Calle Ejemplo 123, 28001 Madrid</span>
+                <span>edificio 115, apartamento 5, melilla, rafael Freyre, holguin,cuba</span>
               </li>
             </ul>
           </div>
         </div>
 
         <div className="mt-12 border-t border-background/10 pt-8 text-center text-sm text-background/60">
-          © {new Date().getFullYear()} JLR Print Studios. Todos los derechos reservados.
+          © {new Date().getFullYear()} JLR PrintStudios. Todos los derechos reservados.
         </div>
       </div>
     </footer>

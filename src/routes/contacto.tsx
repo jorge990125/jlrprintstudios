@@ -176,7 +176,7 @@ function Contacto() {
                 </div>
                 <div>
                   <h3 className="font-medium text-foreground">Teléfono</h3>
-                  <p className="text-muted-foreground">+34 600 000 000</p>
+                  <p className="text-muted-foreground">+5358160709</p>
                 </div>
               </div>
               <div className="flex items-start gap-4">
@@ -185,7 +185,7 @@ function Contacto() {
                 </div>
                 <div>
                   <h3 className="font-medium text-foreground">Email</h3>
-                  <p className="text-muted-foreground">hola@jlrprintstudios.com</p>
+                  <p className="text-muted-foreground">jorgeluisramirezlorenzo@gmail.com</p>
                 </div>
               </div>
               <div className="flex items-start gap-4">
@@ -195,7 +195,7 @@ function Contacto() {
                 <div>
                   <h3 className="font-medium text-foreground">Dirección</h3>
                   <p className="text-muted-foreground">
-                    Calle Ejemplo 123, 28001 Madrid
+                    edificio 115, apartamento 5, melilla, rafael Freyre, holguin,cuba
                   </p>
                 </div>
               </div>
