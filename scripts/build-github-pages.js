@@ -11,15 +11,24 @@
  * VITE_BASE_PATH env var to "/repo-name/" before running this script so asset
  * paths resolve correctly.
  */
-import { mkdir, writeFile, copyFile } from "node:fs/promises";
+import { mkdir, writeFile, copyFile, access } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 import { execSync } from "node:child_process";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const root = join(__dirname, "..");
-const outputDir = join(root, ".output", "public");
-const serverPath = join(root, ".output", "server", "index.mjs");
+
+async function exists(p) {
+  try { await access(p); return true; } catch { return false; }
+}
+
+// Nitro output location varies by version of @lovable.dev/vite-tanstack-config:
+// older builds emit to dist/{client,server}, newer builds emit to .output/{public,server}.
+const candidates = [
+  { outputDir: join(root, ".output", "public"), serverPath: join(root, ".output", "server", "index.mjs") },
+  { outputDir: join(root, "dist", "client"),    serverPath: join(root, "dist", "server", "index.mjs") },
+];
 
 const basePath = process.env.VITE_BASE_PATH || "/";
 console.log(`Building for GitHub Pages with base path: ${basePath}`);
