@@ -34,7 +34,7 @@ jobs:
         # "/" with "/repo-name/" so asset paths resolve correctly.
         run: bun run build:github-pages
         env:
-          VITE_BASE_PATH: "/"
+          VITE_BASE_PATH: "/jlrprintstudios/"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
