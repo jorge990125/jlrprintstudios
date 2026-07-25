@@ -147,7 +147,7 @@ function Index() {
           <div className="grid gap-12 lg:grid-cols-2">
             <div>
               <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-                ¿Por qué elegir JLR Print Studios?
+                ¿Por qué elegir JLR PrintStudios?
               </h2>
               <p className="mt-4 text-lg text-muted-foreground">
                 Nos comprometemos con la calidad y la satisfacción de nuestros

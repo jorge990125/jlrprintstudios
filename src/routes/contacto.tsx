@@ -67,7 +67,7 @@ function Contacto() {
                 <p className="font-medium">¡Mensaje preparado!</p>
                 <p className="mt-2 text-sm text-muted-foreground">
                   Se ha abierto tu cliente de correo. Si no se abre, escríbenos
-                  directamente a hola@jlrprintstudios.com.
+                  directamente a jorgeluisramirezlorenzo@gmail.com.
                 </p>
               </div>
             ) : (
